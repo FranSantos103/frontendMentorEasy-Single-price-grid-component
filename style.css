@@ -1,0 +1,181 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: 'Karla-Bold';
+    src: url(assets/fonts/Karla/Karla-Bold.ttf);
+}
+
+@font-face {
+    font-family: 'Karla-Regular';
+    src: url(assets/fonts/Karla/Karla-Regular.ttf);
+}
+
+body{
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    background-color: #e6eff6;
+}
+
+main{
+    display: grid;
+    grid-template-columns: 350px 350px;
+    grid-template-rows: 240px 280px;
+    margin: auto;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.192);
+    border-radius: 10px;
+}
+
+.introSection{
+    background-color: rgb(255, 255, 255);
+    grid-column-start: 1;
+    grid-column-end: 3;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.subscriptionSection{
+    background-color:#2bb3b1;
+    border-bottom-left-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.089);
+}
+
+.featuresSection{
+    background-color: #4abebd;
+    border-bottom-right-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.089);
+}
+
+.introTitle{
+    color: #4cbebc;
+    font-family: 'Karla-Bold';
+    margin-top: 5%;
+    margin-left: 5%;
+    font-size: 1.7rem;
+}
+
+.introSubtitle{ 
+    color:#cee655;
+    font-family: 'Karla-Bold';
+    margin-top: 4%;
+    margin-left: 5%;
+    font-size: 1.3rem;
+}
+
+.introDescription{
+    color: #c1c7d7;
+    font-family:'Karla-Regular';
+    font-weight: normal;
+    margin-top: 2%;
+    margin-left: 5%;
+    width: 85%;
+    line-height: 28px;
+}
+
+.subscriptionTitle{
+    color: #ffffff;
+    font-family:'Karla-Bold';
+    font-weight: normal;
+    margin-top: 10%;
+    margin-left: 10%;
+    font-size: 1.3rem;
+}
+
+.price{
+    display: flex;
+    align-items: center;
+    margin-top: 7%;
+    margin-left: 10%;
+}
+
+.priceAmount{
+    color: white;
+    font-family:'Karla-Bold';
+    font-size: 2rem;
+}
+
+.pricePeriod{
+    font-family:'Karla-Regular';
+    color: #dee2ec;
+    margin-left: 3%;
+}
+
+.subscriptionNote{
+    font-family:'Karla-Regular';
+    color: #ffffff;
+    margin-left: 10%;
+    margin-top: 3%;
+}
+
+button{
+    background-color: #bfdf32;
+    color: white;
+    margin-left: 10%;
+    margin-top: 10%;
+    border: none;
+    width: 70%;
+    padding-bottom: 15px;
+    padding-top: 15px;
+    border-radius: 5px;
+    font-size: 1rem;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.212);
+    font-family:'Karla-Bold';
+    cursor: pointer;
+}
+
+.featuresTitle{
+    color: #ffffff;
+    font-family:'Karla-Bold';
+    font-weight: normal;
+    margin-top: 10%;
+    margin-left: 10%;
+    font-size: 1.3rem;
+    margin-bottom: 4%;
+}
+
+.featureItem{
+    color: #dee2ec;
+    font-family:'Karla-Regular';
+    font-weight: normal;
+    margin-left: 10%;
+    line-height: 23px;
+}
+
+@media (max-width: 450px) {
+   main {
+    grid-template-columns: 1fr;
+    margin-top: 20px;
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+
+  .introSection {
+    grid-column: auto;
+    padding-bottom: 15px;
+    line-height: 20px;
+    border-radius: 10px 10px 0 0;
+  }
+
+  .price{
+    margin-top: 10%;
+  }
+
+  .subscriptionSection {
+    border-radius: 0;
+  }
+
+  button{
+    margin-top: 12%;
+    margin-bottom: 5%;
+  }
+
+  .featuresSection {
+    border-radius: 0 0 10px 10px;
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+  }
+}
