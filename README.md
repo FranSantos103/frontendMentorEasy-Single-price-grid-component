@@ -22,7 +22,7 @@ Frontend Mentor challenges help you improve your coding skills by building reali
 
 ### Built with
 - Semantic **HTML5** markup  
-- **CSS3** (Flexbox, hover states, custom fonts)  
+- **CSS3** (Grid layout, custom fonts)  
 - Responsive design principles  
 
 ---

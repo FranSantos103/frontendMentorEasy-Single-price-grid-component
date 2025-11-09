@@ -151,6 +151,8 @@ button{
     margin-top: 20px;
     margin-left: 20px;
     margin-right: 20px;
+    padding-bottom: 10px;
+
   }
 
   .introSection {
@@ -175,7 +177,6 @@ button{
 
   .featuresSection {
     border-radius: 0 0 10px 10px;
-    margin-bottom: 20px;
-    padding-bottom: 20px;
+    margin-bottom: 30px;
   }
 }
